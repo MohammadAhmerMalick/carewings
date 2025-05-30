@@ -12,12 +12,20 @@
   --font-mono: var(--font-geist-mono);
 }
 
+
+     '8xl': '96rem',
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
 } */
+
+@theme {
+  --spacing-8xl: 96rem;
+  --color-primry: var(--color-red-800);
+}
 
 body {
   /* background: var(--background);

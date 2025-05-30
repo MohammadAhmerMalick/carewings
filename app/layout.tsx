@@ -4,6 +4,7 @@ import { Montserrat } from 'next/font/google'
 import { classnames } from '@/utils'
 
 import './globals.css'
+import Header from '@/components/Header'
 
 const montserrat = Montserrat({
   display: 'swap',
@@ -44,6 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={classnames(montserrat.className, 'antialiased')}>
+        <Header />
         {children}
       </body>
     </html>

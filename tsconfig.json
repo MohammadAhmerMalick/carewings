@@ -22,6 +22,7 @@
       // "@/*": ["./*"],
       "@/utils": ["./frontend/utils"],
       "@/icons/*": ["./frontend/icons/*"],
+      "@/hooks/*": ["./frontend/hooks/*"],
       "@/sections/*": ["./frontend/sections/*"],
       "@/components/*": ["./frontend/components/*"],
       "@/common/*": ["./frontend/components/common/*"]
