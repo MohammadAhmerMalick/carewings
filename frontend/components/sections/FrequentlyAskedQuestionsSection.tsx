@@ -19,8 +19,8 @@ export const benefits = [
 
 const FrequentlyAskedQuestionsSection = () => {
   return (
-    <section className="lg:my-20 my-10">
-      <Container className='!max-w-5xl'>
+    <section className="my-10 lg:my-20">
+      <Container className="!max-w-5xl">
         <div className="mb-10 text-center">
           <SectionHeading>Frequently Asked Questions</SectionHeading>
         </div>

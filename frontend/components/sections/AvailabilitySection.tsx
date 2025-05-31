@@ -49,7 +49,7 @@ const AvailabilitySection = () => {
           </p>
         </div>
         <div>
-          <p className=" shadow-xl mb-18 bg-gradient mx-auto -mt-16 max-w-max rounded-3xl border-4 border-red-800 p-8 text-2xl font-semibold text-white">
+          <p className="bg-gradient mx-auto -mt-16 mb-18 max-w-max rounded-3xl border-4 border-red-800 p-8 text-2xl font-semibold text-white shadow-xl">
             Anywhere Anytime
           </p>
           <Button

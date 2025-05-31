@@ -43,7 +43,7 @@ const serviceHighlight = [
 
 const ServiceHighlightSliderSection = async () => {
   return (
-    <section className="lg:my-20 my-10">
+    <section className="my-10 lg:my-20">
       <Container>
         <div className="mb-10 text-center">
           <SectionHeading>Service Highlights</SectionHeading>
