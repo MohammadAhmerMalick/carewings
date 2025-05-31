@@ -7,7 +7,7 @@ import Container from '@/common/Container'
 const Footer = () => {
   return (
     <footer className="bg-gradient">
-      <Container className="text-center font-medium text-white">
+      <Container className="text-center text-white">
         <p className="grid justify-center md:flex md:gap-20">
           <span className="flex items-center justify-center gap-2">
             <FaPhone className="h-8" /> {contact.phone}

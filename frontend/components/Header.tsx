@@ -27,7 +27,7 @@ const Header = () => {
             offset > 100 ? 'bg-white/90 py-2 md:py-1' : 'bg-white py-4'
           )}
         >
-          <Container className="flex w-full items-center justify-between !py-0 font-normal">
+          <Container className="flex w-full items-center justify-between !py-0">
             <div className="flex items-center justify-between gap-4">
               <Image
                 width={200}
@@ -43,18 +43,15 @@ const Header = () => {
 
             <div className="flex items-center gap-2">
               <GoDotFill className="hidden text-green-600 lg:flex" />
-              <p className="mr-1 hidden font-medium lg:flex">
+              <p className="mr-1 hidden lg:flex">
                 Open 24/7 - 365 Days | Anytime, Anywhere
               </p>
-              <Button
-                theme="gradient"
-                className="flex items-center gap-2 font-medium"
-              >
+              <Button theme="gradient" className="flex items-center gap-2">
                 <FiPhone className="h-8" /> {contact.phone}
               </Button>
               <Button
                 theme="gradient"
-                className="hidden items-center gap-2 font-medium md:flex"
+                className="hidden items-center gap-2 md:flex"
               >
                 <FaWhatsapp className="h-8" /> {contact.whatsApp}
               </Button>

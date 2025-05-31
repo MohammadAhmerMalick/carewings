@@ -7,7 +7,7 @@ const RatingSection = () => {
     <section>
       <Container>
         <div className="bg-gradient rounded-2xl p-6">
-          <div className="grid grid-cols-4 rounded-xl bg-white px-4 py-8 text-center font-medium text-black">
+          <div className="grid grid-cols-4 rounded-xl bg-white px-4 py-8 text-center text-black">
             <div className="border-primary flex flex-col justify-center border-r-2">
               <p className="flex items-center justify-center gap-2 text-5xl">
                 4.9 <FaStar className="text-yellow-500" />
