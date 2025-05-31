@@ -2,13 +2,14 @@
 
 import Image from 'next/image'
 import { FiPhone } from 'react-icons/fi'
+import { GoDotFill } from 'react-icons/go'
 import { FaWhatsapp } from 'react-icons/fa'
 
+import { contact } from '@/data'
 import Button from '@/common/Button'
 import { classnames } from '@/utils'
 import Container from '@/common/Container'
 import useTopOffset from '@/hooks/useTopOffset'
-import { GoDotFill } from 'react-icons/go'
 
 const Header = () => {
   const { offset } = useTopOffset()
@@ -49,13 +50,13 @@ const Header = () => {
                 theme="gradient"
                 className="flex items-center gap-2 font-medium"
               >
-                <FiPhone className="h-8" /> 0545149849
+                <FiPhone className="h-8" /> {contact.phone}
               </Button>
               <Button
                 theme="gradient"
                 className="hidden items-center gap-2 font-medium md:flex"
               >
-                <FaWhatsapp className="h-8" /> 0545149849
+                <FaWhatsapp className="h-8" /> {contact.whatsApp}
               </Button>
             </div>
           </Container>

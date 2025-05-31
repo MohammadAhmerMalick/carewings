@@ -20,6 +20,7 @@
     ],
     "paths": {
       // "@/*": ["./*"],
+      "@/data": ["./frontend/data"],
       "@/utils": ["./frontend/utils"],
       "@/icons/*": ["./frontend/icons/*"],
       "@/hooks/*": ["./frontend/hooks/*"],

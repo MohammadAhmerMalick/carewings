@@ -11,7 +11,7 @@ const Container = ({ children, className = '' }: ContainerProps) => {
   return (
     <div
       className={classnames(
-        'max-w-8xl mx-auto px-3 py-3 font-light text-neutral-700 md:px-6',
+        'max-w-8xl mx-auto px-3 py-3 text-neutral-700 md:px-6',
         className
       )}
     >
