@@ -1,7 +1,8 @@
 import Image from 'next/image'
 
-import Button from '@/common/Button'
+import { contact } from '@/data'
 import Container from '@/common/Container'
+import LinkButton from '@/common/LinkButton'
 
 const HealthCare = () => {
   return (
@@ -58,9 +59,14 @@ const HealthCare = () => {
             * - Depending on your location in Dubai
           </p>
 
-          <Button theme="gradient" size="big" className="mt-4">
+          <LinkButton
+            size="big"
+            theme="gradient"
+            href={`tel:${contact.phone}`}
+            className="mt-4 flex w-max items-center"
+          >
             Get a Doctor at Home Now
-          </Button>
+          </LinkButton>
         </div>
 
         <Image

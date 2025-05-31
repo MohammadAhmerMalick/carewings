@@ -6,9 +6,9 @@ import { GoDotFill } from 'react-icons/go'
 import { FaWhatsapp } from 'react-icons/fa'
 
 import { contact } from '@/data'
-import Button from '@/common/Button'
 import { classnames } from '@/utils'
 import Container from '@/common/Container'
+import LinkButton from '@/common/LinkButton'
 import useTopOffset from '@/hooks/useTopOffset'
 
 const Header = () => {
@@ -46,15 +46,20 @@ const Header = () => {
               <p className="mr-1 hidden lg:flex">
                 Open 24/7 - 365 Days | Anytime, Anywhere
               </p>
-              <Button theme="gradient" className="flex items-center gap-2">
-                <FiPhone className="h-8" /> {contact.phone}
-              </Button>
-              <Button
+              <LinkButton
                 theme="gradient"
+                href={`tel:${contact.phone}`}
+                className="flex items-center gap-2"
+              >
+                <FiPhone className="h-8" /> {contact.phone}
+              </LinkButton>
+              <LinkButton
+                theme="gradient"
+                href={`https://wa.me/${contact.phone}`}
                 className="hidden items-center gap-2 md:flex"
               >
                 <FaWhatsapp className="h-8" /> {contact.whatsApp}
-              </Button>
+              </LinkButton>
             </div>
           </Container>
         </div>

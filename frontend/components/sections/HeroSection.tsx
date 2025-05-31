@@ -31,7 +31,10 @@ const HeroSection = () => {
           </p>
 
           <div className="mt-12 grid gap-14 text-lg md:grid-cols-2 lg:gap-2">
-            <div className="bg-gradient relative mx-auto w-full max-w-72 rounded-2xl p-2">
+            <a
+              href={`tel:${contact.phone}`}
+              className="bg-gradient relative mx-auto w-full max-w-72 rounded-2xl p-2"
+            >
               <div className="bg-gradient absolute -top-8 right-0 left-0 mx-auto flex size-14 items-center justify-center rounded-full border-2 border-white p-2 lg:size-12">
                 <FaPhone className="text-2xl text-white lg:text-lg" />
               </div>
@@ -39,9 +42,12 @@ const HeroSection = () => {
               <div className="text-primary rounded-xl bg-white p-3 font-semibold">
                 {contact.phone}
               </div>
-            </div>
+            </a>
 
-            <div className="bg-gradient relative mx-auto w-full max-w-72 rounded-2xl p-2">
+            <a
+              href={`https://wa.me/${contact.phone}`}
+              className="bg-gradient relative mx-auto w-full max-w-72 rounded-2xl p-2"
+            >
               <div className="bg-gradient absolute -top-8 right-0 left-0 mx-auto flex size-14 items-center justify-center rounded-full border-2 border-white p-2 lg:size-12">
                 <IoLogoWhatsapp className="text-2xl text-white lg:text-xl" />
               </div>
@@ -49,7 +55,7 @@ const HeroSection = () => {
               <div className="text-primary rounded-xl bg-white p-3 font-semibold">
                 {contact.phone}
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </Container>

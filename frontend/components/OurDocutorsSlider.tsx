@@ -8,7 +8,8 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 
 import Card from '@/common/Card'
-import Button from '@/common/Button'
+import { contact } from '@/data'
+import LinkButton from '@/common/LinkButton'
 
 interface OurDocutors {
   id: number
@@ -41,9 +42,14 @@ const OurDocutorsCard = ({ ourDocutors }: { ourDocutors: OurDocutors }) => {
           {languages}
         </p>
 
-        <Button theme="gradient" className="border-2 text-lg font-bold">
+        <LinkButton
+          size="big"
+          theme="gradient"
+          href={`tel:${contact.phone}`}
+          className="flex items-center justify-center border-2 text-lg font-bold"
+        >
           Know More
-        </Button>
+        </LinkButton>
       </div>
     </Card>
   )

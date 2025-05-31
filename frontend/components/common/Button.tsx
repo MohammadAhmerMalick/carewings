@@ -18,7 +18,7 @@ export const getButtonThemeColor = (theme: ButtonProps['theme'] = 'dark') => {
   return ''
 }
 
-const getButtonSize = (size: ButtonProps['size']) => {
+export const getButtonSize = (size: ButtonProps['size']) => {
   if (size === 'small') return 'h-9 text-sm'
   if (size === 'big') return 'h-12 text-base'
   if (size === 'bigger') return 'lg:h-14 h-10 lg:text-lg'

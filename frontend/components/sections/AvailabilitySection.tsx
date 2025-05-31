@@ -1,7 +1,8 @@
 import Image from 'next/image'
 
-import Button from '@/common/Button'
+import { contact } from '@/data'
 import Container from '@/common/Container'
+import LinkButton from '@/common/LinkButton'
 
 const AvailabilitySection = () => {
   return (
@@ -53,13 +54,14 @@ const AvailabilitySection = () => {
           <p className="bg-gradient mx-auto -mt-16 mb-18 hidden max-w-max rounded-3xl border-4 border-red-800 p-8 text-2xl font-semibold text-white shadow-xl md:block">
             Anywhere Anytime
           </p>
-          <Button
-            theme="gradient"
+          <LinkButton
             size="big"
+            theme="gradient"
+            href={`tel:${contact.phone}`}
             className="min-h-max py-2 !text-xl font-semibold"
           >
             Get a Doctor at Home Now
-          </Button>
+          </LinkButton>
         </div>
       </Container>
     </section>
