@@ -5,7 +5,7 @@ import Container from '@/common/Container'
 
 const HealthCare = () => {
   return (
-    <section className="lg:my-20. my-10">
+    <section className="my-10 lg:my-20">
       <Container className="grid grid-cols-2 gap-2">
         <div className="space-y-2">
           <Image
