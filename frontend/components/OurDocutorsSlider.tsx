@@ -8,7 +8,7 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 
 import Card from '@/common/Card'
-import Button from './common/Button'
+import Button from '@/common/Button'
 
 interface OurDocutors {
   id: number
