@@ -15,7 +15,7 @@ interface Testimonial {
   description: string
   createdAt: string
 }
-const TestmonialCard = ({ testimonial }: { testimonial: Testimonial }) => {
+const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => {
   const { name, description, createdAt } = testimonial
 
   return (
@@ -65,7 +65,7 @@ const TestimonialSlider = ({ testimonial }: { testimonial: Testimonial[] }) => {
     >
       {testimonial.map((review) => (
         <SwiperSlide key={review.id} className="pb-12">
-          <TestmonialCard testimonial={review} />
+          <TestimonialCard testimonial={review} />
         </SwiperSlide>
       ))}
     </Swiper>
