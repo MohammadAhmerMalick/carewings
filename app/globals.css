@@ -24,7 +24,13 @@
 
 @theme {
   --spacing-8xl: 96rem;
-  --color-primry: var(--color-red-800);
+  --color-primary: var(--color-red-800);
+}
+
+@layer components {
+  .bg-gradient {
+    @apply bg-linear-45 from-red-700 to-red-900 text-white;
+  }
 }
 
 body {

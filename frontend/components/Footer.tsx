@@ -6,14 +6,14 @@ import Container from '@/common/Container'
 
 const Footer = () => {
   return (
-    <footer className="bg-linear-45 from-red-800 to-red-900">
+    <footer className="bg-gradient">
       <Container className="text-center font-medium text-white">
-        <p className="flex justify-center gap-20">
-          <span className="flex items-center gap-2">
-            <IoMail className="h-8" /> {contact.email}
-          </span>
-          <span className="flex items-center gap-2">
+        <p className="grid justify-center md:flex md:gap-20">
+          <span className="flex items-center justify-center gap-2">
             <FaPhone className="h-8" /> {contact.phone}
+          </span>
+          <span className="flex items-center justify-center gap-2">
+            <IoMail className="h-8" /> {contact.email}
           </span>
         </p>
         <p>

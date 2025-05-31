@@ -10,8 +10,7 @@ export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
 }
 
 export const getButtonThemeColor = (theme: ButtonProps['theme'] = 'dark') => {
-  if (theme === 'gradient')
-    return ' bg-linear-45 from-red-800 to-red-900 text-white'
+  if (theme === 'gradient') return 'bg-gradient'
   if (theme === 'light') return 'border-black bg-white text-black'
   if (theme === 'dark')
     return 'border-black bg-black text-white hover:bg-neutral-900'
