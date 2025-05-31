@@ -1,7 +1,6 @@
 import SectionHeading from '@/common/SectionHeading'
 import Container from '@/components/common/Container'
 import TestimonialSlider from '@/components/TestimonialSlider'
-// import SectionHeading from '@/components/common/SectionHeading'
 
 const testimonial = [
   {
@@ -59,10 +58,10 @@ const TestimonialSliderSection = async () => {
     <section className="lg:my-20. my-10">
       <Container>
         <div className="mb-10 text-center">
-          <SectionHeading>Testmonials</SectionHeading>
-          <p className="mx-auto mt-2 max-w-xl text-lg">
-            Everything you need to optimize your fleet operations, reduce costs,
-            and improve efficiency.
+          <SectionHeading>Our Happy Clients</SectionHeading>
+          <p className="mx-auto mt-2 max-w-3xl text-xl">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
+            quia numquam dolore. Ex facilis doloribus dolor dolore soluta,
           </p>
         </div>
 
