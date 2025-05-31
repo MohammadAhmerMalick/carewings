@@ -38,3 +38,38 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif; */
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: white;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-red-900);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: gray;
+}
+
+body ::selection,
+html ::selection {
+  color: #303030;
+  background: #febe00;
+}
+
+.swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal {
+  color: rgb(115 115 115 / var(--tw-text-opacity, 1));
+  position: static;
+}
+
+.swiper-pagination-bullet {
+  background: theme('colors.primary') !important;
+  width: 30px !important;
+  height: 10px !important;
+  border-radius: 4px !important;
+}
+.swiper-pagination-bullet-active {
+  background: theme('colors.primary') !important;
+}

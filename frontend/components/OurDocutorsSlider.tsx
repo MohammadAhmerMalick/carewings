@@ -21,7 +21,7 @@ const OurDocutorsCard = ({ ourDocutors }: { ourDocutors: OurDocutors }) => {
   const { name, category, languages, description } = ourDocutors
 
   return (
-    <Card className="bg-gradient grid grid-cols-2">
+    <Card className="bg-gradient grid gap-4 md:grid-cols-2">
       <Image
         width={1920}
         height={1080}
@@ -41,7 +41,9 @@ const OurDocutorsCard = ({ ourDocutors }: { ourDocutors: OurDocutors }) => {
           {languages}
         </p>
 
-        <Button theme="gradient">Know More</Button>
+        <Button theme="gradient" className="border-2 text-lg font-bold">
+          Know More
+        </Button>
       </div>
     </Card>
   )

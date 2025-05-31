@@ -21,13 +21,13 @@ const Accordion = ({
   return (
     <div
       className={classnames(
-        'overflow-hidden rounded-2xl border border-neutral-200 shadow-md duration-300'
+        'overflow-hidden rounded-4xl border border-neutral-200 shadow-md duration-300'
       )}
     >
       <Button
         onClick={() => setIsExpanded(!isExpanded)}
         className={classnames(
-          'h-auto w-full !rounded-2xl border-0 p-4 text-left text-lg text-black shadow-md duration-300 hover:!shadow-md md:text-lg',
+          'h-auto w-full !rounded-4xl border-0 p-4 text-left text-lg text-black shadow-md duration-300 hover:!shadow-md md:text-lg',
           isExpanded && 'bg-primary/10'
         )}
         theme="none"

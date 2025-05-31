@@ -1,14 +1,15 @@
-import Container from '@/common/Container'
 import Image from 'next/image'
-import Button from '../common/Button'
+
+import Button from '@/common/Button'
+import Container from '@/common/Container'
 
 const AvailabilitySection = () => {
   return (
     <section className="my-10 mt-40 bg-neutral-100 lg:mb-20">
-      <Container className="grid grid-cols-3 gap-2 text-center">
+      <Container className="grid grid-cols-2 gap-2 text-center md:grid-cols-3">
         <div className="relative p-4 pt-26 text-black">
-          <div className="bg-gradient absolute -top-28 right-0 left-0 mx-auto mb-4 max-w-52 rounded-2xl p-3">
-            <div className="relative z-20 rounded-xl bg-white py-6 shadow-xl">
+          <div className="bg-gradient absolute -top-28 right-0 left-0 mx-auto mb-4 max-w-52 rounded-4xl p-3">
+            <div className="relative z-20 rounded-3xl bg-white py-6 shadow-xl">
               <Image
                 width={1920}
                 height={1080}
@@ -28,8 +29,8 @@ const AvailabilitySection = () => {
           </p>
         </div>
         <div className="relative p-4 pt-26 text-black">
-          <div className="bg-gradient absolute -top-28 right-0 left-0 mx-auto mb-4 max-w-52 rounded-2xl p-3">
-            <div className="relative z-20 rounded-xl bg-white py-6 shadow-xl">
+          <div className="bg-gradient absolute -top-28 right-0 left-0 mx-auto mb-4 max-w-52 rounded-4xl p-3">
+            <div className="relative z-20 rounded-3xl bg-white py-6 shadow-xl">
               <Image
                 width={1920}
                 height={1080}
@@ -48,14 +49,14 @@ const AvailabilitySection = () => {
             to get the greatest home health care services.
           </p>
         </div>
-        <div>
-          <p className="bg-gradient mx-auto -mt-16 mb-18 max-w-max rounded-3xl border-4 border-red-800 p-8 text-2xl font-semibold text-white shadow-xl">
+        <div className="col-span-2 md:col-span-1">
+          <p className="bg-gradient mx-auto -mt-16 mb-18 hidden max-w-max rounded-3xl border-4 border-red-800 p-8 text-2xl font-semibold text-white shadow-xl md:block">
             Anywhere Anytime
           </p>
           <Button
             theme="gradient"
             size="big"
-            className="!text-xl font-semibold"
+            className="min-h-max py-2 !text-xl font-semibold"
           >
             Get a Doctor at Home Now
           </Button>

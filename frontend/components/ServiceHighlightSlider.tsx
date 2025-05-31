@@ -22,7 +22,7 @@ const ServiceHighlightCard = ({
 
   return (
     <Card className="bg-gradient mx-auto max-w-72 !p-4 text-center">
-      <div className="flex h-52 flex-col justify-center gap-4 rounded-lg bg-white p-5 text-black shadow-lg">
+      <div className="flex h-52 flex-col justify-center gap-4 rounded-3xl bg-white p-5 text-black shadow-lg">
         <Image
           width={1920}
           height={1080}
