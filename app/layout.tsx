@@ -2,9 +2,10 @@ import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 
 import { classnames } from '@/utils'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 
 import './globals.css'
-import Header from '@/components/Header'
 
 const montserrat = Montserrat({
   display: 'swap',
@@ -47,6 +48,7 @@ export default function RootLayout({
       <body className={classnames(montserrat.className, 'antialiased')}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )
