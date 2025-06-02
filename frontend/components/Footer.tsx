@@ -18,8 +18,8 @@ const Footer = () => {
           </a>
         </p>
         <p>
-          Copyright © 2023 CareWings Healthcare All rights reserved.
-          Ministry of Health
+          Copyright © 2023 CareWings Healthcare All rights reserved. Ministry
+          of Health
         </p>
       </Container>
 
@@ -31,7 +31,7 @@ const Footer = () => {
           <FaPhone className="text-2xl text-white" />
         </a>
         <a
-          href={`https://wa.me/${contact.phone}`}
+          href={`https://wa.me/${contact.phoenWithCode}`}
           className="bg-gradient flex size-16 items-center justify-center rounded-full border-4 border-white"
         >
           <Image
@@ -58,7 +58,7 @@ const Footer = () => {
         </a>
 
         <a
-          href={`https://wa.me/${contact.phone}`}
+          href={`https://wa.me/${contact.phoenWithCode}`}
           className="flex items-center justify-center gap-2 p-2"
         >
           <IoLogoWhatsapp className="text-2xl text-white lg:text-xl" />

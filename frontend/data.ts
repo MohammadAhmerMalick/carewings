@@ -1,6 +1,6 @@
 export const contact = {
   phone: '0588384586',
-  whatsApp: '0588384586',
+  phoenWithCode: '+971588384586',
 }
 
 export const serviceHighlights = [

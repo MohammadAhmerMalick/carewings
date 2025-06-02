@@ -55,10 +55,10 @@ const Header = () => {
               </LinkButton>
               <LinkButton
                 theme="gradient"
-                href={`https://wa.me/${contact.phone}`}
+                href={`https://wa.me/${contact.phoenWithCode}`}
                 className="hidden items-center gap-2 md:flex"
               >
-                <FaWhatsapp className="h-8" /> {contact.whatsApp}
+                <FaWhatsapp className="h-8" /> {contact.phone}
               </LinkButton>
             </div>
           </Container>
