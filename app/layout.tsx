@@ -20,6 +20,7 @@ const metaFavicon = '/icon?<generated>'
 export const metadata: Metadata = {
   title: metaTitle,
   description: metaDescription,
+  icons:'/favicon.jpg',
   appleWebApp: {
     capable: true,
     title: metaTitle,
