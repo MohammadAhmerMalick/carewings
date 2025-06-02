@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import { IoMail } from 'react-icons/io5'
 import { FaPhone } from 'react-icons/fa6'
 import { IoLogoWhatsapp } from 'react-icons/io'
 
@@ -16,12 +15,6 @@ const Footer = () => {
             className="flex items-center justify-center gap-2"
           >
             <FaPhone className="h-8" /> {contact.phone}
-          </a>
-          <a
-            href={`https://wa.me/${contact.phone}`}
-            className="flex items-center justify-center gap-2"
-          >
-            <IoMail className="h-8" /> {contact.email}
           </a>
         </p>
         <p>

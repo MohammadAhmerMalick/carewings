@@ -13,7 +13,7 @@ const HeroSection = () => {
         height={1080}
         alt="Doctor at you doorstep"
         title="Doctor at you doorstep"
-        src="/assets/images/hero.png"
+        src="/assets/images/hero.jpg"
         className="absolute hidden h-full w-full object-cover lg:block"
       />
       <Image
@@ -21,7 +21,7 @@ const HeroSection = () => {
         height={1080}
         alt="Doctor at you doorstep"
         title="Doctor at you doorstep"
-        src="/assets/images/hero-mobile.png"
+        src="/assets/images/hero-mobile.jpg"
         className="w-full object-contain lg:hidden"
       />
       <Container>

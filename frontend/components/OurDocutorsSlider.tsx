@@ -8,7 +8,7 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 
 import Card from '@/common/Card'
-import { contact } from '@/data'
+import { contact, ourDocutors } from '@/data'
 import LinkButton from '@/common/LinkButton'
 
 interface OurDocutors {
@@ -55,7 +55,7 @@ const OurDocutorsCard = ({ ourDocutors }: { ourDocutors: OurDocutors }) => {
   )
 }
 
-const OurDocutorsSlider = ({ ourDocutors }: { ourDocutors: OurDocutors[] }) => {
+const OurDocutorsSlider = () => {
   return (
     <Swiper
       loop
@@ -67,9 +67,9 @@ const OurDocutorsSlider = ({ ourDocutors }: { ourDocutors: OurDocutors[] }) => {
       modules={[Pagination, Autoplay]}
       pagination={{ dynamicBullets: true }}
     >
-      {ourDocutors.map((review) => (
-        <SwiperSlide key={review.id} className="pb-12">
-          <OurDocutorsCard ourDocutors={review} />
+      {ourDocutors.map((doctor) => (
+        <SwiperSlide key={doctor.id} className="pb-12">
+          <OurDocutorsCard ourDocutors={doctor} />
         </SwiperSlide>
       ))}
     </Swiper>

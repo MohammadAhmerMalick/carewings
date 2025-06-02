@@ -51,7 +51,7 @@ const AvailabilitySection = () => {
           </p>
         </div>
         <div className="col-span-2 md:col-span-1">
-          <p className="bg-gradient mx-auto -mt-16 mb-18 hidden max-w-max rounded-3xl border-4 border-red-800 p-8 text-2xl font-semibold text-white shadow-xl md:block">
+          <p className="bg-gradient mx-auto -mt-16 mb-18 hidden max-w-max rounded-3xl border-4 border-primary p-8 text-2xl font-semibold text-white shadow-xl md:block">
             Anywhere Anytime
           </p>
           <LinkButton

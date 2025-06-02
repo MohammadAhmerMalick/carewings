@@ -10,7 +10,7 @@ const RatingSection = () => {
           <div className="grid grid-cols-2 rounded-3xl bg-white text-center text-neutral-700 lg:grid-cols-4">
             <div className="border-primary flex flex-col justify-center border-r-2 p-4">
               <p className="flex items-center justify-center gap-2 text-2xl text-black sm:text-5xl">
-                4.9 <FaStar className="text-yellow-500" />
+                5.0 <FaStar className="text-yellow-500" />
               </p>
               <p className="mt-1 lg:text-xl">Rating on Google</p>
             </div>

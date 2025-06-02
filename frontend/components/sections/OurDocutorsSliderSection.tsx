@@ -2,49 +2,6 @@ import SectionHeading from '@/common/SectionHeading'
 import Container from '@/components/common/Container'
 import OurDocutorsSlider from '@/components/OurDocutorsSlider'
 
-const ourDocutors = [
-  {
-    id: 1,
-    name: 'Dr. Mohamed Nadir Smati',
-    category: 'General Practitioner',
-    languages: 'English, Arabic, French',
-    description:
-      "DHA Licensed General Practitioner who graduated from Badji Mokhtar University of Annaba, Algeria and completed a postgraduate one year internship in the renowned Annaba's University Hospital (1087 beds).",
-  },
-  {
-    id: 2,
-    name: 'Dr. Mohamed Nadir Smati',
-    category: 'General Practitioner',
-    languages: 'English, Arabic, French',
-    description:
-      "DHA Licensed General Practitioner who graduated from Badji Mokhtar University of Annaba, Algeria and completed a postgraduate one year internship in the renowned Annaba's University Hospital (1087 beds).",
-  },
-  {
-    id: 3,
-    name: 'Dr. Mohamed Nadir Smati',
-    category: 'General Practitioner',
-    languages: 'English, Arabic, French',
-    description:
-      "DHA Licensed General Practitioner who graduated from Badji Mokhtar University of Annaba, Algeria and completed a postgraduate one year internship in the renowned Annaba's University Hospital (1087 beds).",
-  },
-  {
-    id: 4,
-    name: 'Dr. Mohamed Nadir Smati',
-    category: 'General Practitioner',
-    languages: 'English, Arabic, French',
-    description:
-      "DHA Licensed General Practitioner who graduated from Badji Mokhtar University of Annaba, Algeria and completed a postgraduate one year internship in the renowned Annaba's University Hospital (1087 beds).",
-  },
-  {
-    id: 5,
-    name: 'Dr. Mohamed Nadir Smati',
-    category: 'General Practitioner',
-    languages: 'English, Arabic, French',
-    description:
-      "DHA Licensed General Practitioner who graduated from Badji Mokhtar University of Annaba, Algeria and completed a postgraduate one year internship in the renowned Annaba's University Hospital (1087 beds).",
-  },
-]
-
 const OurDocutorsSliderSection = async () => {
   return (
     <section className="my-10 lg:my-20">
@@ -57,7 +14,7 @@ const OurDocutorsSliderSection = async () => {
           </p>
         </div>
 
-        <OurDocutorsSlider ourDocutors={ourDocutors} />
+        <OurDocutorsSlider />
       </Container>
     </section>
   )

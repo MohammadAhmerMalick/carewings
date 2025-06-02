@@ -8,40 +8,32 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 
 import Card from '@/common/Card'
+import { serviceHighlights } from '@/data'
 
 interface ServiceHighlight {
-  id: number
-  description: string
+  alt: string
+  text: string
 }
-const ServiceHighlightCard = ({
-  serviceHighlight,
-}: {
-  serviceHighlight: ServiceHighlight
-}) => {
-  const { description } = serviceHighlight
 
+const ServiceHighlightCard = ({ text }: ServiceHighlight) => {
   return (
     <Card className="bg-gradient mx-auto max-w-72 !p-4 text-center">
       <div className="flex h-52 flex-col justify-center gap-4 rounded-3xl bg-white p-5 text-black shadow-lg">
         <Image
+          alt={text}
+          title={text}
           width={1920}
           height={1080}
-          alt={description}
-          title={description}
-          src="/assets/icons/service-highlight.png"
           className="h-18 object-contain"
+          src="/assets/icons/service-highlight.png"
         />
-        <p className="text-lg font-semibold">{description}</p>
+        <p className="text-lg font-semibold">{text}</p>
       </div>
     </Card>
   )
 }
 
-const ServiceHighlightSlider = ({
-  serviceHighlight,
-}: {
-  serviceHighlight: ServiceHighlight[]
-}) => {
+const ServiceHighlightSlider = () => {
   return (
     <Swiper
       loop
@@ -54,9 +46,9 @@ const ServiceHighlightSlider = ({
       modules={[Pagination, Autoplay]}
       pagination={{ dynamicBullets: true }}
     >
-      {serviceHighlight.map((review) => (
-        <SwiperSlide key={review.id} className="pb-12">
-          <ServiceHighlightCard serviceHighlight={review} />
+      {serviceHighlights.map(({ alt, text }, i) => (
+        <SwiperSlide key={i} className="pb-12">
+          <ServiceHighlightCard text={text} alt={alt} />
         </SwiperSlide>
       ))}
     </Swiper>

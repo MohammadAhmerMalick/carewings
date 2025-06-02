@@ -24,12 +24,12 @@
 
 @theme {
   --spacing-8xl: 96rem;
-  --color-primary: var(--color-red-800);
+  --color-primary: #0e5d6b;
 }
 
 @layer components {
   .bg-gradient {
-    @apply bg-linear-45 from-red-700 to-red-900 text-white;
+    @apply bg-linear-45 from-[#0e5d6b] to-[#070d11] text-white;
   }
 }
 
