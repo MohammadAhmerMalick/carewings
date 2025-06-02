@@ -18,7 +18,7 @@ const Footer = () => {
           </a>
         </p>
         <p>
-          Copyright © 2023 First Response Healthcare All rights reserved.
+          Copyright © 2023 CareWings Healthcare All rights reserved.
           Ministry of Health
         </p>
       </Container>

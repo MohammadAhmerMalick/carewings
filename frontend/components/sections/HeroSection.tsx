@@ -7,20 +7,20 @@ import Container from '@/common/Container'
 
 const HeroSection = () => {
   return (
-    <section className="mt-20 lg:mt-0 lg:h-screen">
+    <section className="mt-16 lg:mt-0 lg:h-screen">
       <Image
         width={1920}
         height={1080}
-        alt="Doctor at you doorstep"
-        title="Doctor at you doorstep"
+        alt="Doctor at your doorstep"
+        title="Doctor at your doorstep"
         src="/assets/images/hero.jpg"
         className="absolute hidden h-full w-full object-cover lg:block"
       />
       <Image
         width={1920}
         height={1080}
-        alt="Doctor at you doorstep"
-        title="Doctor at you doorstep"
+        alt="Doctor at your doorstep"
+        title="Doctor at your doorstep"
         src="/assets/images/hero-mobile.jpg"
         className="w-full object-contain lg:hidden"
       />

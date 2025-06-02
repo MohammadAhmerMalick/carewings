@@ -18,13 +18,13 @@ const Header = () => {
     <>
       <header
         className={classnames(
-          'border-primary shadow-primary/5 fixed top-0 left-0 z-50 mx-auto w-full shadow-lg backdrop-blur-sm'
+          'border-primary shadow-primary/20 fixed top-0 left-0 z-50 mx-auto w-full shadow-lg backdrop-blur-sm'
         )}
       >
         <div
           className={classnames(
-            'flex h-20 items-center duration-300',
-            offset > 100 ? 'bg-white/90 py-2 md:py-1' : 'bg-white py-4'
+            'flex items-center bg-white duration-300',
+            offset > 100 ? 'py-2' : 'py-4'
           )}
         >
           <Container className="flex w-full items-center justify-between !py-0">
@@ -33,10 +33,10 @@ const Header = () => {
                 width={200}
                 height={44}
                 alt="AutoRent"
-                src="/assets/images/logo.png"
+                src="/assets/images/logo.jpg"
                 className={classnames(
-                  'h-full object-contain duration-300',
-                  offset > 100 ? 'max-h-9' : 'max-h-9 md:max-h-11'
+                  'w-full object-contain duration-300',
+                  offset > 100 ? 'max-w-30' : 'max-w-30 md:max-w-40'
                 )}
               />
             </div>

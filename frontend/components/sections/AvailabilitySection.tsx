@@ -18,6 +18,9 @@ const AvailabilitySection = () => {
                 title="Anywhere"
                 className="h-20 object-contain"
                 src="/assets/icons/service-highlight.png"
+                style={{
+                  filter: 'hue-rotate(177deg) brightness(0.5)',
+                }}
               />
               <p className="mt-4 text-xl font-semibold text-black">Anywhere</p>
             </div>
@@ -39,6 +42,9 @@ const AvailabilitySection = () => {
                 title="Anywhere"
                 className="h-20 object-contain"
                 src="/assets/icons/service-highlight.png"
+                style={{
+                  filter: 'hue-rotate(177deg) brightness(0.5)',
+                }}
               />
               <p className="mt-4 text-xl font-semibold text-black">Anytime</p>
             </div>
@@ -51,7 +57,7 @@ const AvailabilitySection = () => {
           </p>
         </div>
         <div className="col-span-2 md:col-span-1">
-          <p className="bg-gradient mx-auto -mt-16 mb-18 hidden max-w-max rounded-3xl border-4 border-primary p-8 text-2xl font-semibold text-white shadow-xl md:block">
+          <p className="bg-gradient border-primary mx-auto -mt-16 mb-18 hidden max-w-max rounded-3xl border-4 p-8 text-2xl font-semibold text-white shadow-xl md:block">
             Anywhere Anytime
           </p>
           <LinkButton

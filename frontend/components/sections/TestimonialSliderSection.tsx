@@ -5,51 +5,43 @@ import TestimonialSlider from '@/components/TestimonialSlider'
 const testimonial = [
   {
     id: 1,
-    name: 'Ruth Gomez',
-    subTitle: 'L & D Director, Media Rotana Hotel, Dubai',
+    name: 'Sarah Thompson',
+    subTitle: 'Resident Doctor, Atlantis The Palm',
     description:
-      'The whole FirstResponse team was very polite and accommodating. They conducted themselves with professionalism. They were confident and knowledgeable about their products and services. Well done and Thank you.',
-    createdAt: '2024-05-10T09:15:00Z',
+      'The in-house medical team at Atlantis The Palm provided outstanding care during my stay. Dr. Thompson was attentive and ensured my comfort throughout my recovery.',
+    createdAt: '2024-04-15T10:30:00Z',
   },
   {
     id: 2,
-    name: 'Karen S. Randhawa',
-    subTitle: 'Journalist - Khaleej Times',
+    name: 'Ahmed Al Farsi',
+    subTitle: 'On-call Doctor, Burj Al Arab',
     description:
-      'FRH was a useful & handy service in time during an inconvenient situation. I appreciate the friendly & useful advice and help. We will recommend FRH to our family and friends.',
-    createdAt: '2024-04-22T14:30:00Z',
+      'Dr. Al Farsi was extremely professional and responsive. His expertise made my experience at Burj Al Arab both safe and pleasant.',
+    createdAt: '2024-03-22T14:45:00Z',
   },
   {
     id: 3,
-    name: 'Ruth Gomez',
-    subTitle: 'L & D Director, Media Rotana Hotel, Dubai',
+    name: 'Emily Chen',
+    subTitle: 'Medical Consultant, Jumeirah Beach Hotel',
     description:
-      'The whole FirstResponse team was very polite and accommodating. They conducted themselves with professionalism. They were confident and knowledgeable about their products and services. Well done and Thank you.',
-    createdAt: '2024-05-10T09:15:00Z',
+      'Having Dr. Chen available at Jumeirah Beach Hotel gave me peace of mind. Her prompt attention and care were exceptional.',
+    createdAt: '2024-02-10T09:00:00Z',
   },
   {
     id: 4,
-    name: 'Karen S. Randhawa',
-    subTitle: 'Journalist - Khaleej Times',
+    name: 'Michael Rodriguez',
+    subTitle: 'Hotel Doctor, Address Downtown',
     description:
-      'FRH was a useful & handy service in time during an inconvenient situation. I appreciate the friendly & useful advice and help. We will recommend FRH to our family and friends.',
-    createdAt: '2024-04-22T14:30:00Z',
+      'Dr. Rodriguez went above and beyond to assist me during my stay at Address Downtown. His professionalism and kindness were truly appreciated.',
+    createdAt: '2024-01-18T16:20:00Z',
   },
   {
     id: 5,
-    name: 'Ruth Gomez',
-    subTitle: 'L & D Director, Media Rotana Hotel, Dubai',
+    name: 'Priya Singh',
+    subTitle: 'Resident Physician, The Ritz-Carlton Dubai',
     description:
-      'The whole FirstResponse team was very polite and accommodating. They conducted themselves with professionalism. They were confident and knowledgeable about their products and services. Well done and Thank you.',
-    createdAt: '2024-05-10T09:15:00Z',
-  },
-  {
-    id: 6,
-    name: 'Karen S. Randhawa',
-    subTitle: 'Journalist - Khaleej Times',
-    description:
-      'FRH was a useful & handy service in time during an inconvenient situation. I appreciate the friendly & useful advice and help. We will recommend FRH to our family and friends.',
-    createdAt: '2024-04-22T14:30:00Z',
+      'The Ritz-Carlton Dubai’s medical services are top-notch. Dr. Singh was caring, knowledgeable, and made my recovery smooth and stress-free.',
+    createdAt: '2024-05-05T11:10:00Z',
   },
 ]
 
@@ -59,10 +51,6 @@ const TestimonialSliderSection = async () => {
       <Container>
         <div className="mb-10 text-center">
           <SectionHeading>Our Happy Clients</SectionHeading>
-          <p className="mx-auto mt-2 max-w-3xl text-xl">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
-            quia numquam dolore. Ex facilis doloribus dolor dolore soluta,
-          </p>
         </div>
 
         <TestimonialSlider testimonial={testimonial} />

@@ -8,38 +8,35 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 
 import Card from '@/common/Card'
-import { contact, ourDocutors } from '@/data'
+import { contact, ourDoctors } from '@/data'
 import LinkButton from '@/common/LinkButton'
 
-interface OurDocutors {
-  id: number
+interface OurDocutor {
   name: string
-  category: string
-  languages: string
+  image: string
+  language: string
   description: string
 }
-const OurDocutorsCard = ({ ourDocutors }: { ourDocutors: OurDocutors }) => {
-  const { name, category, languages, description } = ourDocutors
+const OurDocutorCard = ({ ourDoctor }: { ourDoctor: OurDocutor }) => {
+  const { name, language, image, description } = ourDoctor
 
   return (
     <Card className="bg-gradient grid gap-4 md:grid-cols-2">
       <Image
+        alt={name}
+        title={name}
         width={1920}
         height={1080}
-        alt={description}
-        title={description}
-        src="/doctors/doctor-1.png"
+        src={`/doctors/${image}`}
         className="mx-auto w-60 object-contain"
       />
 
       <div className="flex flex-col gap-2">
-        <p className="text-xl font-bold">
-          {name} ({category})
-        </p>
+        <p className="text-xl font-bold">{name}</p>
         <p>{description}</p>
         <p className="text-lg">
           <span className="font-semibold">Languages: </span>
-          {languages}
+          {language}
         </p>
 
         <LinkButton
@@ -67,9 +64,9 @@ const OurDocutorsSlider = () => {
       modules={[Pagination, Autoplay]}
       pagination={{ dynamicBullets: true }}
     >
-      {ourDocutors.map((doctor) => (
-        <SwiperSlide key={doctor.id} className="pb-12">
-          <OurDocutorsCard ourDocutors={doctor} />
+      {ourDoctors.map((doctor) => (
+        <SwiperSlide key={doctor.name} className="pb-12">
+          <OurDocutorCard ourDoctor={doctor} />
         </SwiperSlide>
       ))}
     </Swiper>

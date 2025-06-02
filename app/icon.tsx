@@ -1,6 +1,6 @@
 import { ImageResponse } from 'next/og'
 
-import Favicon from '@/icons/Favicon'
+import Image from 'next/image'
 
 // Route segment config
 export const runtime = 'edge'
@@ -46,7 +46,12 @@ export default function Icon({ id }: { id: string }) {
           justifyContent: 'center',
         }}
       >
-        <Favicon size={size} />
+        <Image
+          width={50}
+          height={50}
+          alt="Carewings"
+          src="/assets/images/favicon.jpg"
+        />
       </div>
     ),
     { width: size, height: size }

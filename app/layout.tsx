@@ -28,12 +28,12 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: metaTitle,
-    images: metaFavicon,
+    images: '/assets/images/favicon.jpg',
     description: metaDescription,
   },
   twitter: {
     title: metaTitle,
-    images: metaFavicon,
+    images: '/assets/images/favicon.jpg',
     description: metaDescription,
   },
 }

@@ -9,19 +9,11 @@ const HealthCare = () => {
     <section className="my-10 lg:my-20">
       <Container className="flex grid-cols-2 flex-col-reverse gap-2 md:grid">
         <div className="space-y-2">
-          <Image
-            width={1920}
-            height={1080}
-            src="/assets/images/image-tag.png"
-            alt="About First Response Healthcare"
-            title="About First Response Healthcare"
-            className="hidden size-60 max-w-lg object-contain md:block"
-          />
           <h2 className="text-2xl font-semibold text-black">
-            About First Response Healthcare
+            About CareWings Healthcare
           </h2>
           <p>
-            First Response Healthcare is a proficient and world-class home
+            CareWings Healthcare is a proficient and world-class home
             healthcare company committed to providing patient centred,
             high-quality and comprehensive care that brings value to our
             patients, their families,and the community by large. As the name
@@ -30,7 +22,7 @@ const HealthCare = () => {
             be in the best of their health always.
           </p>
           <h3 className="pt-2 text-xl font-semibold text-black">
-            Doctor On Call Services from First Response Healthcare
+            Doctor On Call Services from CareWings Healthcare
           </h3>
           <ul className="list-disc pl-6">
             <li>Information : Call us to make an Appointment at 0505050 387</li>
@@ -50,7 +42,7 @@ const HealthCare = () => {
               Office
             </li>
             <li>
-              You wll be glad to know that our Doctor at Home On Call service is
+              You will be glad to know that our Doctor at Home On Call service is
               available on weekends and public holidays.
             </li>
           </ul>
@@ -72,9 +64,9 @@ const HealthCare = () => {
         <Image
           width={1920}
           height={1080}
-          src="/assets/images/health-care.png"
-          alt="About First Response Healthcare"
-          title="About First Response Healthcare"
+          src="/assets/images/health-care.jpg"
+          alt="About CareWings Healthcare"
+          title="About CareWings Healthcare"
           className="mx-auto h-full w-full max-w-lg object-contain"
         />
       </Container>
