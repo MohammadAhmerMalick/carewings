@@ -28,12 +28,12 @@ const OurDocutorCard = ({ ourDoctor }: { ourDoctor: OurDocutor }) => {
         width={1920}
         height={1080}
         src={`/doctors/${image}`}
-        className="mx-auto w-60 object-contain"
+        className="mx-auto w-full max-w-96 object-contain rounded-2xl"
       />
 
       <div className="flex flex-col gap-2">
         <p className="text-xl font-bold">{name}</p>
-        <p>{description}</p>
+        <p className='text-sm'>{description}</p>
         <p className="text-lg">
           <span className="font-semibold">Languages: </span>
           {language}
@@ -57,7 +57,7 @@ const OurDocutorsSlider = () => {
     <Swiper
       loop
       breakpoints={{
-        992: { slidesPerView: 2 },
+        1200: { slidesPerView: 2 },
       }}
       spaceBetween={24}
       autoplay={{ delay: 4000 }}

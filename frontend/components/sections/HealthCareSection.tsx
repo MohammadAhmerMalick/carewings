@@ -13,19 +13,21 @@ const HealthCare = () => {
             About CareWings Healthcare
           </h2>
           <p>
-            CareWings Healthcare is a proficient and world-class home
-            healthcare company committed to providing patient centred,
-            high-quality and comprehensive care that brings value to our
-            patients, their families,and the community by large. As the name
-            indicates, we excel at providing prompt and reliable medical care to
-            our patients to help them achieve rapid recovery from illnesses and
-            be in the best of their health always.
+            CareWings Healthcare is a proficient and world-class home healthcare
+            company committed to providing patient centred, high-quality and
+            comprehensive care that brings value to our patients, their
+            families,and the community by large. As the name indicates, we excel
+            at providing prompt and reliable medical care to our patients to
+            help them achieve rapid recovery from illnesses and be in the best
+            of their health always.
           </p>
           <h3 className="pt-2 text-xl font-semibold text-black">
             Doctor On Call Services from CareWings Healthcare
           </h3>
           <ul className="list-disc pl-6">
-            <li>Information : Call us to make an Appointment at 0505050 387</li>
+            <li>
+              Information : Call us to make an Appointment at {contact.phone}
+            </li>
             <li>
               Time for appointments : Anytime 24/7 365 days a year we are just a
               call away
@@ -42,8 +44,8 @@ const HealthCare = () => {
               Office
             </li>
             <li>
-              You will be glad to know that our Doctor at Home On Call service is
-              available on weekends and public holidays.
+              You will be glad to know that our Doctor at Home On Call service
+              is available on weekends and public holidays.
             </li>
           </ul>
 

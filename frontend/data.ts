@@ -37,7 +37,7 @@ export const ourDoctors = [
     description:
       'MOH General Practitioner with a medical degree from Sudan International University, Khartoum. With three years of clinical experience as a Pediatric General Practitioner, having served at Baraah Pediatrics Hospital and the Northern State Ministry of Health in Sudan. Proven ability to provide high-quality pediatric care, including diagnosis, treatment, and follow-up for a wide range of childhood illnesses. Adept at working in fast-paced environments, collaborating with multidisciplinary teams, and supporting public health initiatives focused on child wellness and preventive care.',
     language: 'Language: Arabic, English',
-    image: 'doctor-1.jpeg',
+    image: 'doctor-5.jpeg',
   },
   {
     name: 'DR OMER MERGHANI',
@@ -51,7 +51,7 @@ export const ourDoctors = [
     description:
       'DHA and DOH licensed General Practitioner with a Diploma in Obstetrics and Gynecology (DGO) and an MBBS from RAK Medical and Health Sciences University. Completed internship at Saqr, Obaidulla, and Omran Hospitals with rotations in Internal Medicine, Surgery, ENT, and OBGYN. Gained clinical experience in top UAE hospitals including Sheikh Khalifa Medical City, Rahba, Al Ain, and Fujairah Hospitals, along with a 3-month posting at Christian Medical College (CMC) Vellore, India. Skilled in outpatient/inpatient care and minor procedures, with a strong commitment to patient-centered practice.',
     language: 'Language: Hindi, English, Punjabi, Basic skills in Arabic',
-    image: 'doctor-3.jpeg',
+    image: 'doctor-4.jpeg',
   },
 ]
 
