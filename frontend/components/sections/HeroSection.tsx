@@ -8,22 +8,24 @@ import Container from '@/common/Container'
 const HeroSection = () => {
   return (
     <section className="mt-16 lg:mt-0 lg:h-screen">
-      <Image
-        width={1920}
-        height={1080}
-        alt="Doctor at your doorstep"
-        title="Doctor at your doorstep"
-        src="/assets/images/hero.jpg"
-        className="absolute hidden h-full w-full object-cover lg:block"
-      />
-      <Image
-        width={1920}
-        height={1080}
-        alt="Doctor at your doorstep"
-        title="Doctor at your doorstep"
-        src="/assets/images/hero-mobile.jpg"
-        className="w-full object-contain lg:hidden"
-      />
+      <a href={`tel:${contact.phone}`}>
+        <Image
+          width={1920}
+          height={1080}
+          alt="Doctor at your doorstep"
+          title="Doctor at your doorstep"
+          src="/assets/images/hero.jpg"
+          className="absolute hidden h-full w-full object-cover lg:block"
+        />
+        <Image
+          width={1920}
+          height={1080}
+          alt="Doctor at your doorstep"
+          title="Doctor at your doorstep"
+          src="/assets/images/hero-mobile.jpg"
+          className="w-full object-contain lg:hidden"
+        />
+      </a>
       <Container>
         <div className="relative z-20 mr-auto ml-auto rounded-2xl bg-white p-4 text-center lg:mt-[40vh] lg:mr-0 lg:max-w-[460px] lg:shadow-xl">
           <p className="text-xl font-semibold lg:mt-2">
