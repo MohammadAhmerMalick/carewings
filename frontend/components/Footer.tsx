@@ -11,6 +11,9 @@ const Footer = () => {
       <Container className="pb-20 text-center text-white md:pb-3">
         <p className="grid justify-center md:flex md:gap-20">
           <a
+            data-gtm-label="Phone"
+            data-gtm-action="Phone Click"
+            data-gtm-category="Phone CTA"
             href={`tel:${contact.phone}`}
             className="flex items-center justify-center gap-2"
           >
@@ -31,6 +34,9 @@ const Footer = () => {
           <FaPhone className="text-2xl text-white" />
         </a>
         <a
+          data-gtm-label="WhatsApp"
+          data-gtm-action="WhatsApp Click"
+          data-gtm-category="WhatsApp CTA"
           href={`https://wa.me/${contact.phoenWithCode}`}
           className="bg-gradient flex size-16 items-center justify-center rounded-full border-4 border-white"
         >
@@ -50,6 +56,9 @@ const Footer = () => {
         style={{ boxShadow: ' 0 -10px 15px 0px #00000044' }}
       >
         <a
+          data-gtm-label="Phone"
+          data-gtm-action="Phone Click"
+          data-gtm-category="Phone CTA"
           href={`tel:${contact.phone}`}
           className="flex items-center justify-center gap-2 border-r p-4"
         >
@@ -58,6 +67,9 @@ const Footer = () => {
         </a>
 
         <a
+          data-gtm-label="WhatsApp"
+          data-gtm-action="WhatsApp Click"
+          data-gtm-category="WhatsApp CTA"
           href={`https://wa.me/${contact.phoenWithCode}`}
           className="flex items-center justify-center gap-2 p-2"
         >

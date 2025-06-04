@@ -50,11 +50,17 @@ const Header = () => {
                 theme="gradient"
                 href={`tel:${contact.phone}`}
                 className="flex items-center gap-2"
+                data-gtm-label="Phone"
+                data-gtm-action="Phone Click"
+                data-gtm-category="Phone CTA"
               >
                 <FiPhone className="h-8" /> {contact.phone}
               </LinkButton>
               <LinkButton
                 theme="gradient"
+                data-gtm-label="WhatsApp"
+                data-gtm-action="WhatsApp Click"
+                data-gtm-category="WhatsApp CTA"
                 href={`https://wa.me/${contact.phoenWithCode}`}
                 className="hidden items-center gap-2 md:flex"
               >

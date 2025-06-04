@@ -56,6 +56,9 @@ const HealthCare = () => {
           <LinkButton
             size="big"
             theme="gradient"
+            data-gtm-label="Phone"
+            data-gtm-action="Phone Click"
+            data-gtm-category="Phone CTA"
             href={`tel:${contact.phone}`}
             className="mt-4 flex w-max items-center"
           >
