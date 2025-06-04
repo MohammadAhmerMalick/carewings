@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
+import { GoogleTagManager } from '@next/third-parties/google'
 
 import { classnames } from '@/utils'
 import Header from '@/components/Header'
@@ -20,7 +21,7 @@ const metaFavicon = '/icon?<generated>'
 export const metadata: Metadata = {
   title: metaTitle,
   description: metaDescription,
-  icons:'/favicon.jpg',
+  icons: '/favicon.jpg',
   appleWebApp: {
     capable: true,
     title: metaTitle,
@@ -46,6 +47,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="GTM-MCJT9FCQ" />
       <body className={classnames(montserrat.className, 'antialiased')}>
         <Header />
         {children}
