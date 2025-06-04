@@ -15,12 +15,13 @@ const montserrat = Montserrat({
 })
 
 const metaTitle = 'Carewings'
-const metaDescription = 'Medical'
+const metaDescription = 'Doctor at hotel'
 const metaFavicon = '/icon?<generated>'
 
 export const metadata: Metadata = {
   title: metaTitle,
   description: metaDescription,
+  keywords: ['doctor at hotel'],
   icons: '/favicon.jpg',
   appleWebApp: {
     capable: true,
