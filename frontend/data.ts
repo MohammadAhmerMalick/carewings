@@ -35,7 +35,7 @@ export const ourDoctors = [
   {
     name: 'DR ABENEZER ASSEFA',
     description:
-      'MOH General Practitioner with a medical degree from Sudan International University, Khartoum. With three years of clinical experience as a Pediatric General Practitioner, having served at Baraah Pediatrics Hospital and the Northern State Ministry of Health in Sudan. Proven ability to provide high-quality pediatric care, including diagnosis, treatment, and follow-up for a wide range of childhood illnesses. Adept at working in fast-paced environments, collaborating with multidisciplinary teams, and supporting public health initiatives focused on child wellness and preventive care.',
+      'DHA General Practitioner with a medical degree from Sudan International University, Khartoum. With three years of clinical experience as a Pediatric General Practitioner, having served at Baraah Pediatrics Hospital and the Northern State Ministry of Health in Sudan. Proven ability to provide high-quality pediatric care, including diagnosis, treatment, and follow-up for a wide range of childhood illnesses. Adept at working in fast-paced environments, collaborating with multidisciplinary teams, and supporting public health initiatives focused on child wellness and preventive care.',
     language: 'Language: Arabic, English',
     image: 'doctor-5.jpeg',
   },
