@@ -16,28 +16,21 @@ const montserrat = Montserrat({
 
 const metaTitle = 'Carewings'
 const metaDescription = 'Doctor at hotel'
-const metaFavicon = '/icon?<generated>'
 
 export const metadata: Metadata = {
   title: metaTitle,
   description: metaDescription,
   keywords: ['doctor at hotel'],
-  icons: '/favicon.jpg',
   appleWebApp: {
     capable: true,
     title: metaTitle,
     statusBarStyle: 'default',
-    startupImage: metaFavicon,
   },
   openGraph: {
-    title: metaTitle,
-    images: '/assets/images/favicon.jpg',
-    description: metaDescription,
+    type: 'website',
   },
   twitter: {
-    title: metaTitle,
-    images: '/assets/images/favicon.jpg',
-    description: metaDescription,
+    card: 'summary',
   },
 }
 

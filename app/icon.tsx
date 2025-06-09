@@ -1,19 +1,18 @@
 import { ImageResponse } from 'next/og'
 
-import Image from 'next/image'
+import Favicon from '@/icons/Favicon'
 
-// Route segment config
-export const runtime = 'edge'
 export const contentType = 'image/png'
+
 export function generateImageMetadata() {
   return [
-    //
+    // android
     {
       id: 'android-icon-192x192.png',
       contentType: 'image/png',
       size: { width: 192, height: 192 },
     },
-    //
+    // favicon
     {
       id: 'favicon-32x32.png',
       contentType: 'image/png',
@@ -31,6 +30,7 @@ export function generateImageMetadata() {
     },
   ]
 }
+
 // Image generation
 export default function Icon({ id }: { id: string }) {
   const size = parseInt(id.match(/\d+/g)?.toString() || '32', 10)
@@ -46,12 +46,7 @@ export default function Icon({ id }: { id: string }) {
           justifyContent: 'center',
         }}
       >
-        <Image
-          width={50}
-          height={50}
-          alt="Carewings"
-          src="/assets/images/favicon.jpg"
-        />
+        <Favicon size={size} />
       </div>
     ),
     { width: size, height: size }

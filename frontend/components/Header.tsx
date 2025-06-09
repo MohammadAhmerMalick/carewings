@@ -32,7 +32,7 @@ const Header = () => {
               <Image
                 width={200}
                 height={44}
-                alt="AutoRent"
+                alt="CareWings"
                 src="/assets/images/logo.jpg"
                 className={classnames(
                   'w-full object-contain duration-300',
