@@ -8,7 +8,7 @@ import Container from '@/common/Container'
 const HeroSection = () => {
   return (
     <section className="mt-16 lg:mt-0 lg:h-screen">
-      <a href={`tel:${contact.phone}`}>
+      <a href={`tel:${contact.phone}`} className='phoneBtn'>
         <Image
           width={1920}
           height={1080}
