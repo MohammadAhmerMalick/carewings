@@ -46,7 +46,7 @@ const OurDocutorCard = ({ ourDoctor }: { ourDoctor: OurDocutor }) => {
           data-gtm-label="Phone"
           data-gtm-action="Phone Click"
           data-gtm-category="Phone CTA"
-          className="flex items-center justify-center border-2 text-lg font-bold"
+          className="phoneBtn flex items-center justify-center border-2 text-lg font-bold"
         >
           Know More
         </LinkButton>

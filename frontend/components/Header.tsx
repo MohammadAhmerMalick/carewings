@@ -49,7 +49,7 @@ const Header = () => {
               <LinkButton
                 theme="gradient"
                 href={`tel:${contact.phone}`}
-                className="flex items-center gap-2"
+                className="phoneBtn flex items-center gap-2"
                 data-gtm-label="Phone"
                 data-gtm-action="Phone Click"
                 data-gtm-category="Phone CTA"
@@ -62,7 +62,7 @@ const Header = () => {
                 data-gtm-action="WhatsApp Click"
                 data-gtm-category="WhatsApp CTA"
                 href={`https://wa.me/${contact.phoenWithCode}`}
-                className="hidden items-center gap-2 md:flex"
+                className="whatsappBtn hidden items-center gap-2 md:flex"
               >
                 <FaWhatsapp className="h-8" /> {contact.phone}
               </LinkButton>

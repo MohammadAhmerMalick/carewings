@@ -1,3 +1,4 @@
+import Script from 'next/script'
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import { GoogleTagManager } from '@next/third-parties/google'
@@ -46,6 +47,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <Script src="/scripts/general.js" />
       </body>
     </html>
   )

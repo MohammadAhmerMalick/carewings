@@ -60,7 +60,7 @@ const HealthCare = () => {
             data-gtm-action="Phone Click"
             data-gtm-category="Phone CTA"
             href={`tel:${contact.phone}`}
-            className="mt-4 flex w-max items-center"
+            className="phoneBtn mt-4 flex w-max items-center"
           >
             Get a Doctor at Home Now
           </LinkButton>

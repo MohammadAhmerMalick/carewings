@@ -67,7 +67,7 @@ const AvailabilitySection = () => {
             data-gtm-label="Phone"
             data-gtm-action="Phone Click"
             data-gtm-category="Phone CTA"
-            className="min-h-max py-2 !text-xl font-semibold"
+            className="phoneBtn min-h-max py-2 !text-xl font-semibold"
           >
             Get a Doctor at Home Now
           </LinkButton>

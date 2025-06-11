@@ -15,7 +15,7 @@ const Footer = () => {
             data-gtm-action="Phone Click"
             data-gtm-category="Phone CTA"
             href={`tel:${contact.phone}`}
-            className="flex items-center justify-center gap-2"
+            className="phoneBtn flex items-center justify-center gap-2"
           >
             <FaPhone className="h-8" /> {contact.phone}
           </a>
@@ -38,7 +38,7 @@ const Footer = () => {
           data-gtm-action="WhatsApp Click"
           data-gtm-category="WhatsApp CTA"
           href={`https://wa.me/${contact.phoenWithCode}`}
-          className="bg-gradient flex size-16 items-center justify-center rounded-full border-4 border-white"
+          className="whatsappBtn bg-gradient flex size-16 items-center justify-center rounded-full border-4 border-white"
         >
           <Image
             width={75}
@@ -60,7 +60,7 @@ const Footer = () => {
           data-gtm-action="Phone Click"
           data-gtm-category="Phone CTA"
           href={`tel:${contact.phone}`}
-          className="flex items-center justify-center gap-2 border-r p-4"
+          className="phoneBtn flex items-center justify-center gap-2 border-r p-4"
         >
           <FaPhone className="text-2xl text-white lg:text-lg" />
           Call Us
@@ -71,7 +71,7 @@ const Footer = () => {
           data-gtm-action="WhatsApp Click"
           data-gtm-category="WhatsApp CTA"
           href={`https://wa.me/${contact.phoenWithCode}`}
-          className="flex items-center justify-center gap-2 p-2"
+          className="whatsappBtn flex items-center justify-center gap-2 p-2"
         >
           <IoLogoWhatsapp className="text-2xl text-white lg:text-xl" />
           WhatsApp Us
