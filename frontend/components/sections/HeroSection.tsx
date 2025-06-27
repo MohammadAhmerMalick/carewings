@@ -8,13 +8,13 @@ import Container from '@/common/Container'
 const HeroSection = () => {
   return (
     <section className="mt-16 lg:mt-0 lg:h-screen">
-      <a href={`tel:${contact.phone}`}>
+      <a href={`tel:${contact.phone}`} className='phoneBtn'>
         <Image
           width={1920}
           height={1080}
           alt="Doctor at your doorstep"
           title="Doctor at your doorstep"
-          src="/assets/images/hero.jpg"
+          src="/assets/images/hero.png"
           className="absolute hidden h-full w-full object-cover lg:block"
         />
         <Image
@@ -22,7 +22,7 @@ const HeroSection = () => {
           height={1080}
           alt="Doctor at your doorstep"
           title="Doctor at your doorstep"
-          src="/assets/images/hero-mobile.jpg"
+          src="/assets/images/hero-mobile.png"
           className="w-full object-contain lg:hidden"
         />
       </a>
@@ -34,8 +34,11 @@ const HeroSection = () => {
 
           <div className="mt-12 grid gap-14 text-lg md:grid-cols-2 lg:gap-2">
             <a
+              data-gtm-label="Phone"
+              data-gtm-action="Phone Click"
+              data-gtm-category="Phone CTA"
               href={`tel:${contact.phone}`}
-              className="bg-gradient relative mx-auto w-full max-w-72 rounded-2xl p-2"
+              className="phoneBtn bg-gradient relative mx-auto w-full max-w-72 rounded-2xl p-2"
             >
               <div className="bg-gradient absolute -top-8 right-0 left-0 mx-auto flex size-14 items-center justify-center rounded-full border-2 border-white p-2 lg:size-12">
                 <FaPhone className="text-2xl text-white lg:text-lg" />
@@ -47,8 +50,11 @@ const HeroSection = () => {
             </a>
 
             <a
-              href={`https://wa.me/${contact.phone}`}
-              className="bg-gradient relative mx-auto w-full max-w-72 rounded-2xl p-2"
+              data-gtm-label="WhatsApp"
+              data-gtm-action="WhatsApp Click"
+              data-gtm-category="WhatsApp CTA"
+              href={`https://wa.me/${contact.phoenWithCode}`}
+              className="whatsappBtn bg-gradient relative mx-auto w-full max-w-72 rounded-2xl p-2"
             >
               <div className="bg-gradient absolute -top-8 right-0 left-0 mx-auto flex size-14 items-center justify-center rounded-full border-2 border-white p-2 lg:size-12">
                 <IoLogoWhatsapp className="text-2xl text-white lg:text-xl" />

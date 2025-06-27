@@ -64,7 +64,10 @@ const AvailabilitySection = () => {
             size="big"
             theme="gradient"
             href={`tel:${contact.phone}`}
-            className="min-h-max py-2 !text-xl font-semibold"
+            data-gtm-label="Phone"
+            data-gtm-action="Phone Click"
+            data-gtm-category="Phone CTA"
+            className="phoneBtn min-h-max py-2 !text-xl font-semibold"
           >
             Get a Doctor at Home Now
           </LinkButton>

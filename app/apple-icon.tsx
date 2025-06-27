@@ -3,7 +3,6 @@ import { ImageResponse } from 'next/og'
 import Favicon from '@/icons/Favicon'
 
 // Route segment config
-export const runtime = 'edge'
 export const contentType = 'image/png'
 export function generateImageMetadata() {
   return [

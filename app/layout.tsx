@@ -1,5 +1,7 @@
+import Script from 'next/script'
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
+import { GoogleTagManager } from '@next/third-parties/google'
 
 import { classnames } from '@/utils'
 import Header from '@/components/Header'
@@ -14,28 +16,22 @@ const montserrat = Montserrat({
 })
 
 const metaTitle = 'Carewings'
-const metaDescription = 'Medical'
-const metaFavicon = '/icon?<generated>'
+const metaDescription = 'Doctor at hotel'
 
 export const metadata: Metadata = {
   title: metaTitle,
   description: metaDescription,
-  icons:'/favicon.jpg',
+  keywords: ['doctor at hotel'],
   appleWebApp: {
     capable: true,
     title: metaTitle,
     statusBarStyle: 'default',
-    startupImage: metaFavicon,
   },
   openGraph: {
-    title: metaTitle,
-    images: '/assets/images/favicon.jpg',
-    description: metaDescription,
+    type: 'website',
   },
   twitter: {
-    title: metaTitle,
-    images: '/assets/images/favicon.jpg',
-    description: metaDescription,
+    card: 'summary',
   },
 }
 
@@ -46,10 +42,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="GTM-MCJT9FCQ" />
       <body className={classnames(montserrat.className, 'antialiased')}>
         <Header />
         {children}
         <Footer />
+        <Script src="/scripts/general.js" />
       </body>
     </html>
   )

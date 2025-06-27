@@ -28,12 +28,12 @@ const OurDocutorCard = ({ ourDoctor }: { ourDoctor: OurDocutor }) => {
         width={1920}
         height={1080}
         src={`/doctors/${image}`}
-        className="mx-auto w-full max-w-96 object-contain rounded-2xl"
+        className="mx-auto w-full max-w-96 rounded-2xl object-contain"
       />
 
       <div className="flex flex-col gap-2">
         <p className="text-xl font-bold">{name}</p>
-        <p className='text-sm'>{description}</p>
+        <p className="text-sm">{description}</p>
         <p className="text-lg">
           <span className="font-semibold">Languages: </span>
           {language}
@@ -43,7 +43,10 @@ const OurDocutorCard = ({ ourDoctor }: { ourDoctor: OurDocutor }) => {
           size="big"
           theme="gradient"
           href={`tel:${contact.phone}`}
-          className="flex items-center justify-center border-2 text-lg font-bold"
+          data-gtm-label="Phone"
+          data-gtm-action="Phone Click"
+          data-gtm-category="Phone CTA"
+          className="phoneBtn flex items-center justify-center border-2 text-lg font-bold"
         >
           Know More
         </LinkButton>
