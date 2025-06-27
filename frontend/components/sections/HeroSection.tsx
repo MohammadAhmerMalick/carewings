@@ -5,16 +5,20 @@ import { IoLogoWhatsapp } from 'react-icons/io'
 import { contact } from '@/data'
 import Container from '@/common/Container'
 
-const HeroSection = () => {
+const HeroSection = ({
+  page = 'home',
+}: {
+  page?: 'home' | 'iv-drip' | 'physiotherapy'
+}) => {
   return (
     <section className="mt-16 lg:mt-0 lg:h-screen">
-      <a href={`tel:${contact.phone}`} className='phoneBtn'>
+      <a href={`tel:${contact.phone}`} className="phoneBtn">
         <Image
           width={1920}
           height={1080}
           alt="Doctor at your doorstep"
           title="Doctor at your doorstep"
-          src="/assets/images/hero.png"
+          src={`/assets/images/hero-${page}.jpg`}
           className="absolute hidden h-full w-full object-cover lg:block"
         />
         <Image
@@ -22,7 +26,7 @@ const HeroSection = () => {
           height={1080}
           alt="Doctor at your doorstep"
           title="Doctor at your doorstep"
-          src="/assets/images/hero-mobile.png"
+          src={`/assets/images/hero-${page}-mobile.jpg`}
           className="w-full object-contain lg:hidden"
         />
       </a>
