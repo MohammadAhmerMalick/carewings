@@ -1,10 +1,15 @@
 import { FaStar } from 'react-icons/fa6'
 
+import { classnames } from '@/utils'
 import Container from '@/common/Container'
 
-const RatingSection = () => {
+const RatingSection = ({ withBg }: { withBg?: boolean }) => {
   return (
-    <section>
+    <section
+      className={classnames(
+        withBg && "'bg-gradient-to-br to-emerald-50' from-teal-50"
+      )}
+    >
       <Container>
         <div className="bg-gradient rounded-4xl p-4 lg:p-6">
           <div className="grid grid-cols-2 rounded-3xl bg-white text-center text-neutral-700 lg:grid-cols-4">
