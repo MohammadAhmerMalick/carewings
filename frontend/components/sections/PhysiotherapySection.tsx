@@ -1,3 +1,4 @@
+import { type ReactNode } from 'react'
 import { IconType } from 'react-icons'
 import { BsClock } from 'react-icons/bs'
 import { FiPhone } from 'react-icons/fi'
@@ -10,27 +11,40 @@ const services = [
   {
     Icon: BiHeart,
     heading: 'Pain Relief Therapy',
-    para: 'Specialized treatment for neck pain, back pain, and plantar fasciitis',
+    para: (
+      <p>
+        Specialized treatment for neck pain, back pain, and plantar fasciitis
+      </p>
+    ),
   },
   {
     Icon: BiUser,
     heading: 'Pediatric Physiotherapy',
-    para: 'Safe and effective physiotherapy care specifically designed for children',
+    para: (
+      <p>
+        Safe and effective physiotherapy care specifically designed for children
+      </p>
+    ),
   },
   {
     Icon: BiHome,
     heading: 'Physiotherapy at Home Dubai',
-    para: 'Convenient physio at home services with personalized care',
+    para: (
+      <p>
+        Convenient <h3 className="inline font-semibold">Physio at home</h3> services with
+        personalized care
+      </p>
+    ),
   },
   {
     Icon: BsClock,
     heading: '24/7 Availability',
-    para: 'Available anytime, anywhere - 365 days a year',
+    para: <p>Available anytime, anywhere - 365 days a year</p>,
   },
 ]
 
 interface ServiceCardsProps {
-  para: string
+  para: string | ReactNode
   Icon: IconType
   heading: string
 }
@@ -44,7 +58,7 @@ const ServiceCards = ({ para, Icon, heading }: ServiceCardsProps) => {
             <Icon className="size-6 text-teal-600" />
           </div>
           <div>
-            <h3 className="text mb-1 font-semibold">{heading}</h3>
+            <h2 className="text mb-1 font-semibold">{heading}</h2>
             <p className="text-sm text-gray-600">{para}</p>
           </div>
         </div>

@@ -7,7 +7,7 @@ const RatingSection = ({ withBg }: { withBg?: boolean }) => {
   return (
     <section
       className={classnames(
-        withBg && "'bg-gradient-to-br to-emerald-50' from-teal-50"
+        withBg && 'bg-gradient-to-br from-teal-50 to-emerald-50'
       )}
     >
       <Container>
